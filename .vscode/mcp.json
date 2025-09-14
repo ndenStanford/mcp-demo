@@ -1,0 +1,16 @@
+{
+  "servers": {
+      "time": {
+        "command": "uvx",
+        "args": ["mcp-server-time"]
+      },
+      "Neptune Query": {
+        "command": "uvx",
+        "args": ["awslabs.amazon-neptune-mcp-server@latest"],
+        "env": {
+          "FASTMCP_LOG_LEVEL": "INFO",
+          "NEPTUNE_ENDPOINT": "neptune-db://neptune-cluster-prod.cluster-ro-ckqym26sysvu.us-east-2.neptune.amazonaws.com"
+      }
+    }
+  }
+}
